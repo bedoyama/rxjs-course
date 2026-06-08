@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy} from '@angular/core';
 import {concat, fromEvent, interval, noop, observable, Observable, of, timer, merge} from 'rxjs';
 import {delayWhen, filter, map, take, timeout} from 'rxjs/operators';
 import {createHttpObservable} from '../common/util';
@@ -8,6 +8,7 @@ import {createHttpObservable} from '../common/util';
     selector: 'about',
     templateUrl: './about.component.html',
     styleUrls: ['./about.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class AboutComponent implements OnInit {
