@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, OnInit, ViewChild, ChangeDetectionStrategy} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {Course} from "../model/course";
 import {
@@ -23,6 +23,7 @@ import {Store} from '../common/store.service';
     selector: 'course',
     templateUrl: './course.component.html',
     styleUrls: ['./course.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class CourseComponent implements OnInit, AfterViewInit {
