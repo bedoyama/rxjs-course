@@ -333,6 +333,111 @@ export const LESSONS = {
         "seqNo": 5,
         courseId: 0
     },
+    36: {
+        id: 36,
+        "description": "NgRx Store Setup and State Modeling",
+        "duration": "08:21",
+        "seqNo": 1,
+        courseId: 4
+    },
+    37: {
+        id: 37,
+        "description": "Creating Actions, Reducers and Selectors",
+        "duration": "09:04",
+        "seqNo": 2,
+        courseId: 4
+    },
+    38: {
+        id: 38,
+        "description": "Handling Side Effects with NgRx Effects",
+        "duration": "10:12",
+        "seqNo": 3,
+        courseId: 4
+    },
+    39: {
+        id: 39,
+        "description": "Library Project Structure and Public API Design",
+        "duration": "07:43",
+        "seqNo": 1,
+        courseId: 5
+    },
+    40: {
+        id: 40,
+        "description": "Building Reusable Components and Directives",
+        "duration": "11:09",
+        "seqNo": 2,
+        courseId: 5
+    },
+    41: {
+        id: 41,
+        "description": "Packaging and Publishing an Angular Library",
+        "duration": "06:58",
+        "seqNo": 3,
+        courseId: 5
+    },
+    42: {
+        id: 42,
+        "description": "TypeScript Type System Fundamentals",
+        "duration": "08:11",
+        "seqNo": 1,
+        courseId: 6
+    },
+    43: {
+        id: 43,
+        "description": "Interfaces, Generics and Advanced Types",
+        "duration": "09:36",
+        "seqNo": 2,
+        courseId: 6
+    },
+    44: {
+        id: 44,
+        "description": "Building a REST API with TypeScript and Node",
+        "duration": "12:20",
+        "seqNo": 3,
+        courseId: 6
+    },
+    45: {
+        id: 45,
+        "description": "Reactive Architecture Foundations",
+        "duration": "07:57",
+        "seqNo": 1,
+        courseId: 7
+    },
+    46: {
+        id: 46,
+        "description": "Combining Streams for Smart UI State",
+        "duration": "09:49",
+        "seqNo": 2,
+        courseId: 7
+    },
+    47: {
+        id: 47,
+        "description": "Caching, Multicasting and Shared Observables",
+        "duration": "10:03",
+        "seqNo": 3,
+        courseId: 7
+    },
+    48: {
+        id: 48,
+        "description": "Material Theming and Component Basics",
+        "duration": "08:39",
+        "seqNo": 1,
+        courseId: 8
+    },
+    49: {
+        id: 49,
+        "description": "Building Forms with Angular Material",
+        "duration": "09:15",
+        "seqNo": 2,
+        courseId: 8
+    },
+    50: {
+        id: 50,
+        "description": "Tables, Dialogs and Data UX Patterns",
+        "duration": "10:41",
+        "seqNo": 3,
+        courseId: 8
+    },
 
 
 
@@ -347,4 +452,3 @@ export function findCourseById(courseId:number) {
 export function findLessonsForCourse(courseId:number) {
     return Object.values(LESSONS).filter(lesson => lesson.courseId == courseId);
 }
-
